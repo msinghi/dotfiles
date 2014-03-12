@@ -33,7 +33,7 @@ On_White='\e[47m'       # White
 
 NC="\e[m"               # Color Reset
 
-export PATH=/opt/local/bin:/opt/local/sbin:/opt/mongo/bin:$PATH
+PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 
@@ -53,7 +53,7 @@ export PATH
 ## mysql stuff
 alias mysql_start='sudo $MYSQL_HOME/bin/mysqld_safe &'
 alias mysql_stop='sudo $MYSQL_HOME/bin/mysqladmin shutdown'
-alias mysql='sudo /usr/local/mysql/bin/mysql'
+alias mysql='sudo $MYSQL_HOME/bin/mysql'
 
 source git-prompt.sh
 export PS1="\[$Cyan\]\u@\h: \[$BYellow\]\w\[$NC\]\$(__git_ps1 \ \(%s\)) $ "
