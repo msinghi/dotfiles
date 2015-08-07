@@ -1,0 +1,13 @@
+alias o="open"
+
+# List all files colorized in long format, including got files
+alias ls="ls -Gla"
+
+# List only directories
+alias lsd='ls -l | grep "^d"'
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder"
+
+

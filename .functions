@@ -1,0 +1,16 @@
+# Lists all the functions in this file
+function functions () {
+  grep 'function ' ~/.functions | cut -d ' ' -f 2
+}
+
+# Make a directory, cd into it
+function md () {
+  mkdir -p "$@" && cd "$@"
+}
+
+# Make a tar.gz file
+function mktgz () {
+  tar -czf $1.tgz $1;
+}
+
+
