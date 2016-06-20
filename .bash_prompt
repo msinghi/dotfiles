@@ -33,7 +33,7 @@ On_White='\e[47m'       # White
 
 NC="\e[m"               # Color Reset
 
-source ~/git-prompt.sh
+source git-prompt.sh
 
 export PS1="\[$Cyan\]\u@\h: \[$BYellow\]\w\[$NC\]\$(__git_ps1 \ \(%s\)) $ "
 
